@@ -1,6 +1,10 @@
 /* font-family: 'Big Shoulders Display', cursive; */
 /* font-family: 'Outfit', sans-serif; */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Big Shoulders Display', cursive;
 }
@@ -11,7 +15,7 @@ body {
 
 .container {
     width: 100%;
-    height: 63.5vw;
+    height: 64vw;
     position: relative;
 }
 
@@ -91,6 +95,138 @@ body {
 
 .button:hover .right {
     background-color: #151515;
+    transition: 0.7s;
+}
+
+
+
+/* ----------------------- MAIN --------------------------- */
+
+main {
+    margin-top: 510px;
+}
+
+.starter_section {
+    max-width: 343px;
+    margin: auto;
+}
+
+.grid_container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 343px;
+    grid-template-rows: 480px 200px 293px;
+    row-gap: 16px;
+    margin-top: 32px;
+    grid-template-areas:
+        "chair"
+        "museum"
+        "black_div";
+}
+
+.first_img {
+    background-image: url(../assets/images/mobile/image-grid-1@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.day h2{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    color: #151515;
+    max-width: 11ch;
+}
+
+.day p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    font-family: 'Outfit', sans-serif;
+    max-width: 27ch;
+    margin-top: 21px;
+}
+
+.chair {
+    grid-area: chair;
+    background-image: url(../assets/images/mobile/image-grid-2@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.museum {
+    grid-area: museum;
+    background-image: url(../assets/images/mobile/image-grid-3@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.black_div {
+    grid-area: black_div;
+    background: #151515;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt_black h2{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    width: 9ch;
+}
+
+.txt_black p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Outfit', sans-serif;
+    max-width: 25ch;
+    margin-top: 24px;
+}
+
+
+/* ----------------------------- FOOTER ------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #151515;
+    margin-top: 120px;
+    padding: 48px 0 48px 32px;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    max-width: 29ch;
+    margin-top: 38px;
+}
+
+.social {
+    margin-top: 38px;
+    display: flex;
+    gap: 20px;
+}
+
+.social_icon path {
+    transition: 0.7s;
+}
+
+.social_icon path:hover {
+    fill: #D5966C;
+    cursor: pointer;
     transition: 0.7s;
 }
 
