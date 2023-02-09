@@ -31,6 +31,7 @@ body {
     position: absolute;
     top: 72vw;
     left: 4.3vw;
+    transition: 1s;
 }
 
 .text h1 {
@@ -109,6 +110,9 @@ main {
 .starter_section {
     max-width: 343px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
 }
 
 .grid_container {
@@ -125,6 +129,8 @@ main {
 }
 
 .first_img {
+    width: 343px;
+    height: 320px;
     background-image: url(../assets/images/mobile/image-grid-1@2x.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -141,7 +147,7 @@ main {
     font-size: 50px;
     line-height: 45px;
     color: #151515;
-    max-width: 11ch;
+    max-width: 8.5ch;
 }
 
 .day p {
@@ -229,5 +235,98 @@ footer p {
     cursor: pointer;
     transition: 0.7s;
 }
+
+
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* -------- TABLET --------- */
+
+
+
+/* HEADER */
+
+@media (min-width: 768px)
+{
+    .background {
+        background-image: url(../assets/images/tablet/image-hero@2x.jpg);
+        width: 437px;
+        height: 700px;
+    }
+    
+    .text {
+        top: 145px;
+        left: 400px;
+        transition: 1s;
+    }
+    
+    .text h1 {
+        font-size: 70px;
+        line-height: 65px;
+        max-width: 9.5ch;
+    }
+    
+    .header_div {
+        margin-top: 48px;
+    }
+    
+    .button {
+        margin-top: 48px;
+    }
+    
+    /* MAIN */
+
+    main {
+        margin-top: 330px;
+    }
+
+    .starter_section {
+        flex-direction: row-reverse;
+        max-width: 688px;
+        justify-content: space-between;
+    }
+
+    .first_img {
+        width: 398px;
+        height: 400px;
+        background-image: url(../assets/images/tablet/image-grid-1@2x.jpg);
+    }
+
+    .day {
+        justify-content: center;
+    }
+
+    .day h2 {
+        max-width: 7ch;
+    }
+
+    .day p {
+        max-width: 19ch;
+        margin-top: 24px;
+    }
+
+    .grid_container {
+        grid-template-columns: 398px 280px;
+        grid-template-rows: 313px 396px;
+        grid-template-areas: 
+            "chair museum"
+            "chair black_div";
+        gap: 11px;
+        margin-top: 11px;
+    }
+
+    .chair {
+        background-image: url(../assets/images/tablet/image-grid-2@2x.jpg);
+    }
+
+    .museum {
+        background-image: url(../assets/images/tablet/image-grid-3@2x.jpg);
+    }
+
+    .txt_black p {
+        max-width: 19ch;
+    }
+}
+
 
 
