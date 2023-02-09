@@ -222,6 +222,14 @@ footer {
     transition: 1s;
 }
 
+.footer_logo {
+    background-image: url(../assets/icons/logo-light.svg);
+    width: 110px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 footer p {
     font-weight: 300;
     font-size: 16px;
@@ -259,10 +267,16 @@ footer p {
 
 
 
-/* HEADER */
+
 
 @media (min-width: 768px)
 {
+    /* HEADER */
+
+    .container {
+        height: auto;
+    }
+
     .background {
         background-image: url(../assets/images/tablet/image-hero@2x.jpg);
         width: 437px;
@@ -292,7 +306,7 @@ footer p {
     /* MAIN */
 
     main {
-        margin-top: 330px;
+        margin-top: 120px;
     }
 
     .starter_section {
@@ -342,6 +356,8 @@ footer p {
         max-width: 19ch;
     }
 
+    /* FOOTER */
+
     footer {
         flex-direction: row;
         padding: 56px 40px 56px;
@@ -358,6 +374,140 @@ footer p {
 
     footer p {
         margin: 0 0 0 65px;
+    }
+}
+
+
+/* -------------------- DESKTOP ----------------- */
+
+@media (min-width: 1440px) {
+    /* HEADER */
+    
+    .container {
+        width: 990px;
+        height: 800px;
+        background: #151515;
+    }
+
+    .background {
+        background-image: url(../assets/images/desktop/image-hero@2x.jpg);
+        width: 100%;
+        height: 100%;
+        background-position: right;
+    }
+
+    .text h1 {
+        width: 9.3ch;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 88px;
+        background-image: linear-gradient(90deg, white 287px, black 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: absolute;
+        top: 42px;
+        left: -237px;
+    }
+
+    .header_div {
+        position: absolute;
+        top: 40px;
+        left: 540px;
+        margin: 0;
+        
+    }
+
+    .button {
+        margin-top: 64px;
+    }
+
+    .header_div p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        width: 24ch;
+        background: #444444;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    /* MAIN */
+
+    main {
+        margin-top: 180px;
+    }
+
+    .starter_section {
+        max-width: 1110px;
+    }
+
+    .first_img {
+        width: 635px;
+        height: 400px;
+        background-image: url(../assets/images/desktop/image-grid-1@2x.jpg);
+    }
+
+    .day h2 {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+        max-width: 8.5ch;
+    }
+
+    .day p {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 22ch;
+    }
+
+    .grid_container {
+        margin-top: 30px;
+        grid-template-columns: 635px 445px;
+        grid-template-rows: 313px 377px;
+        gap: 30px;
+    }
+
+    .chair {
+        background-image: url(../assets/images/desktop/image-grid-2@2x.jpg);
+    }
+
+    .museum {
+        background-image: url(../assets/images/desktop/image-grid-3@2x.jpg);
+    }
+
+    .black_div h2 {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .black_div p {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 25ch;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 80px 165px;
+    }
+
+    .footer_logo {
+        width: 160px;
+        height: 58px;
+    }
+
+    .footer_txt p {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 36ch;
+        margin-left: 140px;
     }
 }
 
