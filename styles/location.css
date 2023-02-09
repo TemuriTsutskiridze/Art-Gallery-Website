@@ -122,6 +122,12 @@ footer {
     background-color: #D5966C;
 }
 
+.footer_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
 .footer_logo {
     width: 110px;
     height: 40px;
@@ -141,6 +147,7 @@ footer {
 .social {
     display: flex;
     gap: 20px;
+    height: 20px;
 }
 
 .social_icon path{
@@ -193,4 +200,15 @@ footer {
     }
 
     /* FOOTER */
+
+    footer {
+        padding: 56px 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer_txt {
+        flex-direction: row;
+        gap: 65px;
+    }
 }
