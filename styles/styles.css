@@ -113,6 +113,7 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
+    transition: 1s;
 }
 
 .grid_container {
@@ -126,6 +127,7 @@ main {
         "chair"
         "museum"
         "black_div";
+        transition: 1s;
 }
 
 .first_img {
@@ -134,12 +136,14 @@ main {
     background-image: url(../assets/images/mobile/image-grid-1@2x.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 1s;
 }
 
 .day {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 1s;
 }
 
 .day h2{
@@ -148,6 +152,7 @@ main {
     line-height: 45px;
     color: #151515;
     max-width: 8.5ch;
+    transition: 1s;
 }
 
 .day p {
@@ -158,6 +163,7 @@ main {
     font-family: 'Outfit', sans-serif;
     max-width: 27ch;
     margin-top: 21px;
+    transition: 1s;
 }
 
 .chair {
@@ -165,6 +171,7 @@ main {
     background-image: url(../assets/images/mobile/image-grid-2@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s;
 }
 
 .museum {
@@ -172,6 +179,7 @@ main {
     background-image: url(../assets/images/mobile/image-grid-3@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s;
 }
 
 .black_div {
@@ -181,6 +189,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 .txt_black h2{
@@ -188,6 +197,7 @@ main {
     font-size: 50px;
     line-height: 45px;
     width: 9ch;
+    transition: 1s;
 }
 
 .txt_black p {
@@ -197,6 +207,7 @@ main {
     font-family: 'Outfit', sans-serif;
     max-width: 25ch;
     margin-top: 24px;
+    transition: 1s;
 }
 
 
@@ -208,6 +219,7 @@ footer {
     background-color: #151515;
     margin-top: 120px;
     padding: 48px 0 48px 32px;
+    transition: 1s;
 }
 
 footer p {
@@ -218,12 +230,15 @@ footer p {
     color: white;
     max-width: 29ch;
     margin-top: 38px;
+    transition: 1s;
 }
 
 .social {
     margin-top: 38px;
     display: flex;
     gap: 20px;
+    height: 20px;
+    transition: 1s;
 }
 
 .social_icon path {
@@ -325,6 +340,24 @@ footer p {
 
     .txt_black p {
         max-width: 19ch;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 56px 40px 56px;
+        justify-content: space-between;
+    }
+
+    .footer_txt {
+        display: flex;
+    }
+
+    .social {
+        margin: 0;
+    }
+
+    footer p {
+        margin: 0 0 0 65px;
     }
 }
 
