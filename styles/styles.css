@@ -428,10 +428,6 @@ footer p {
         font-size: 22px;
         line-height: 32px;
         width: 24ch;
-        background: #444444;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
     }
 
     /* MAIN */

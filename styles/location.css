@@ -14,9 +14,10 @@ body {
 .map {
     background-image: url(../assets/images/mobile/image-map@2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 146.6vw;
+    transition: 1s;
 }
 
 .button {
@@ -27,6 +28,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transition: 1s;
 }
 
 .left {
@@ -72,6 +74,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: 1s;
 }
 
 main h1 {
@@ -79,10 +82,12 @@ main h1 {
     font-size: 50px;
     line-height: 45px;
     color: white;
+    transition: 1s;
 }
 
 .info {
     margin-top: 48px;
+    transition: 1s;
 }
 
 .info h2 {
@@ -90,6 +95,7 @@ main h1 {
     font-size: 32px;
     line-height: 32px;
     color: #D5966C;
+    transition: 1s;
 }
 
 .address {
@@ -100,6 +106,7 @@ main h1 {
     margin-top: 20px;
     font-family: 'Outfit', sans-serif;
     max-width: 17ch;
+    transition: 1s;
 }
 
 .main_txt {
@@ -110,6 +117,7 @@ main h1 {
     margin-top: 20px;
     font-family: 'Outfit', sans-serif;
     max-width: 29ch;
+    transition: 1s;
 }
 
 /* ------------------------ FOOTER -------------------- */
@@ -120,12 +128,14 @@ footer {
     flex-direction: column;
     gap: 38px;
     background-color: #D5966C;
+    transition: 1s;
 }
 
 .footer_txt {
     display: flex;
     flex-direction: column;
     gap: 38px;
+    transition: 1s;
 }
 
 .footer_logo {
@@ -133,6 +143,7 @@ footer {
     height: 40px;
     background-image: url(../assets/icons/logo-dark.svg);
     background-repeat: no-repeat;
+    transition: 1s;
 }
 
 .footer_info {
@@ -142,12 +153,14 @@ footer {
     color: #151515;
     font-family: 'Outfit', sans-serif;
     max-width: 29ch;
+    transition: 1s;
 }
 
 .social {
     display: flex;
     gap: 20px;
     height: 20px;
+    transition: 1s;
 }
 
 .social_icon path{
@@ -163,7 +176,7 @@ footer {
 
 /* -------------- RESPONSIVE ------------- */
 
-
+/* --------- TABLET ----------- */
 
 @media (min-width: 768px) {
 
@@ -210,5 +223,66 @@ footer {
     .footer_txt {
         flex-direction: row;
         gap: 65px;
+    }
+}
+
+
+/* ------------- DESKTOP ------------- */
+
+@media (min-width: 1440px) {
+    
+    /* HEADER */
+
+    .map {
+        background-image: url(../assets/images/desktop/image-map@2x.png);
+        height: 41.66vw;
+    }
+
+    .button {
+        left: 156px;
+    }
+
+    /* MAIN */ 
+    
+    main {
+        padding: 104px 165px 128px;
+    }
+
+    main h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .address {
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 24px;
+    }
+
+    .main_txt {
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 32px;
+    }
+
+    /* FOOTER */
+    
+    footer {
+        padding: 80px 165px;
+    }
+
+    .footer_txt {
+        gap: 140px;
+    }
+
+    .footer_logo {
+        width: 160px;
+        height: 58px;
+    }
+
+    .footer_info {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 37ch;
     }
 }
